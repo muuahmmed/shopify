@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopify/compoents/components.dart';
 import 'package:shopify/views/sign_up.dart';
 import 'forger_password.dart';
-import 'home/home_screen.dart';
+import 'home/main_home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -259,7 +259,7 @@ class _LoginScreenState extends State<LoginScreen>
                                       onPressed: () {
                                         if (_formKey.currentState?.validate() ??
                                             false) {
-                                          navigateTo(context, const HomeScreen());
+                                          navigateTo(context, const MainHomeScreen());
                                           ScaffoldMessenger.of(context)
                                               .showSnackBar(
                                             SnackBar(

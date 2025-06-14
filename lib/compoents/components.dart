@@ -39,7 +39,7 @@ void showToast({required text, required ToastStates state}) =>
       fontSize: 16.0,
     );
 
-enum ToastStates { SUCCESS, ERROR, WARNING }
+enum ToastStates { SUCCESS, ERROR, WARNING, error }
 
 Color chooseToastColor(ToastStates state) {
   switch (state) {
@@ -49,6 +49,9 @@ Color chooseToastColor(ToastStates state) {
       return Colors.red;
     case ToastStates.WARNING:
       return Colors.amber;
+    case ToastStates.error:
+      // TODO: Handle this case.
+      throw UnimplementedError();
   }
 }
 

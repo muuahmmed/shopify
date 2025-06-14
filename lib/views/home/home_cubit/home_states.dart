@@ -17,3 +17,9 @@ class HomeShopErrorState extends HomeShopStates {
 }
 
 class ShopChangeBottomNavState extends HomeShopStates {}
+
+class ShopCategoryChangedState extends HomeShopStates {
+  final int selectedIndex;
+
+  ShopCategoryChangedState(this.selectedIndex);
+}
